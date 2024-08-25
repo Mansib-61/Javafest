@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { uploadPaper } from '../services/api';
+import './UploadPaper.css'; // Importing the CSS file
 
 const UploadPaper = () => {
   const [title, setTitle] = useState('');
@@ -11,7 +12,7 @@ const UploadPaper = () => {
   const handleUpload = async () => {
     const paperData = { title, description, category, subject, file };
     await uploadPaper(paperData);
-    // Optionally redirect or show success message
+    // Optionally redirect or show a success message
   };
 
   return (

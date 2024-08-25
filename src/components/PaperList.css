@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.paper-list-container {
+    padding: 20px;
+    background-image: url('../assets/images/study.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensures the background covers the full height of the viewport */
+    color: #333;
+}
+
+.paper-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.paper-list-container input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.paper-list-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.paper-list-container li {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.paper-list-container h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.paper-list-container p {
+    margin-top: 10px;
+    color: #555;
+}

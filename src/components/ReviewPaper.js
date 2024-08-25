@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { addReview } from '../services/api';
+import './ReviewPaper.css'; // Importing the CSS file
 
 const ReviewPaper = () => {
   const [paperId, setPaperId] = useState('');
@@ -9,7 +10,7 @@ const ReviewPaper = () => {
   const handleReview = async () => {
     const reviewData = { paperId, rating, comment };
     await addReview(reviewData);
-    // Optionally redirect or show success message
+    // Optionally redirect or show a success message
   };
 
   return (

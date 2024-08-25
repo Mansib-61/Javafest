@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/images/study.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px; /* Padding inside the auth-box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px; /* Width of the auth-box */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensure elements are stacked vertically */
+    align-items: center; /* Center align elements horizontally */
+}
+
+.auth-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px; /* Padding inside input fields */
+    margin: 12px 0; /* Margin between input fields and other elements */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px; /* Padding inside the button */
+    background-color: #4CAF50; /* Standard green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-box button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
+
+.auth-box p {
+    margin-top: 15px; /* Margin at the top of the paragraph */
+    cursor: pointer;
+    color: #D32F2F;
+}
+
+.auth-box p:hover {
+    text-decoration: underline;
+}

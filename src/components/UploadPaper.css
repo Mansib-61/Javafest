@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.upload-paper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/images/study.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    padding: 20px;
+}
+
+.upload-paper-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.upload-paper-container input,
+.upload-paper-container textarea {
+    width: 100%;
+    max-width: 400px; /* Limit input width for better readability */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.upload-paper-container textarea {
+    height: 100px; /* Set a height for the textarea */
+    resize: none;
+}
+
+.upload-paper-container input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.upload-paper-container button {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    background-color: #008CBA; /* Set a blue color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.upload-paper-container button:hover {
+    background-color: #008CBA; /* Darker shade for hover effect */
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home'; // Import Home component
 import Auth from './components/Auth';
 import PaperList from './components/PaperList';
 import UploadPaper from './components/UploadPaper';
@@ -11,7 +12,8 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<Auth />} />
+          <Route path="/" element={<Home />} /> {/* Set Home as the default route */}
+          <Route path="/auth" element={<Auth />} />
           <Route path="/papers" element={<PaperList />} />
           <Route path="/upload" element={<UploadPaper />} />
           <Route path="/review" element={<ReviewPaper />} />
@@ -21,4 +23,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;

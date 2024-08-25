@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getPapers } from '../services/api';
+import './PaperList.css'; // Importing the CSS file
 
 const PaperList = () => {
   const [papers, setPapers] = useState([]);
